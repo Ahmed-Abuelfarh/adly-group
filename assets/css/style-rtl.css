@@ -1,0 +1,134 @@
+* {
+  font-family: "cairo", sans-serif;
+}
+body {
+  direction: rtl;
+}
+.title {
+  font-family: "cairo", sans-serif;
+}
+.title::before {
+  transform: rotateY(180deg);
+  top: 7px;
+  left: initial;
+  right: -25px;
+}
+
+/* header */
+.nav-item:not(:last-of-type) {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.nav-item::before {
+  right: initial;
+  left: 0;
+}
+.nav-item:hover::before,
+.nav-item.active::before {
+  right: initial;
+  left: 100%;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+.lang-chevron {
+  order: -1;
+}
+.language-list {
+  right: initial;
+  left: 0;
+}
+.nav-links {
+  left: initial;
+  right: -300px;
+}
+.nav-links.active {
+  left: initial;
+  right: 0;
+}
+.close-icon {
+  right: initial;
+  left: -20px;
+}
+
+/* home */
+.home-title {
+  font-family: "cairo", sans-serif;
+}
+.stamp-img {
+  left: initial;
+  right: -16px;
+}
+.tape-img {
+  left: initial;
+  right: -50px;
+}
+.home-img-container {
+  right: initial;
+  left: 15px;
+}
+.white-text {
+  top: 50%;
+}
+.black-text {
+  display: none;
+}
+
+/* about */
+.about-title {
+  margin: 0 0 15px auto;
+}
+.column-one {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/* services */
+.service-title {
+  font-family: "cairo", sans-serif;
+}
+.box-content-title {
+  font-family: "cairo", sans-serif;
+}
+.box-content-icon {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/* contact */
+.contact-number {
+  direction: ltr;
+}
+.contact-info-icon {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.contact-info-social {
+  right: initial;
+  left: 20px;
+}
+.contact-info-link {
+  margin-left: initial;
+  margin-right: 10px;
+}
+.contact-form::before {
+  right: initial;
+  left: 0;
+}
+.input-box span {
+  left: initial;
+  right: 0;
+}
+.input-box:nth-of-type(1),
+.input-box:nth-of-type(3) {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+/* footer */
+.dema-link {
+  margin-left: 0;
+  margin-right: 3px;
+}
